@@ -13,8 +13,8 @@ I've found this to be the best way to make improvements and meaningful changes -
 This applies to all aspects of life - you *can* do all the dishes in one fel swoop, but that requires 
 commitment. Instead, doing them in increments makes it feel not overwhelming and manageable.
 
-![schultzie's GitHub stats](https://github-readme-stats.vercel.app/api?username=dylanschultzie&count_private=true&hide=stars)
-
+![schultzie's  stats](https://github-readme-stats.vercel.app/api?username=dylanschultzie&count_private=true&hide=stars)
+[![GitHub Streak](https://streak-stats.demolab.com/?user=dylanschultzie)](https://git.io/streak-stats)
 
 <!--
 **dylanschultzie/dylanschultzie** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
