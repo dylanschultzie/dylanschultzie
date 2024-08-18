@@ -61,3 +61,14 @@ if anyof(
   if string :contains "${plusalias}" "test"          { fileinto "Test 🧪";          return; }
 }
 ```
+
+auto-delete auth
+---
+```
+# Deletes temporary verification mails
+require ["include", "environment", "variables", "relational", "comparator-i;ascii-numeric", "spamtest"];
+require ["fileinto", "imap4flags","vnd.proton.expire"];
+if allof (header :comparator "i;unicode-casemap" :contains "Subject" ["authentication token", "login code", "confirmation code", "verification code", "two-step authentication", "two step authentication", "two factor authentication", "two-factor authentication", "account protection", "account verification", "identification code", "one-time passcode", "login -", "authorization code", "multi-factor authentication", "2-factor authentication", "verify your email", "verify your mail", "verify email", "confirm your email", "confirm your mail", "OTP", "verify your", "your PIN", "new login"]) {
+    expire "minute" "30";
+}
+```
